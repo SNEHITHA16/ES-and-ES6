@@ -94,10 +94,9 @@ console.log(
   
 task-4:
 
-const avg= scores.reduce(function(acc,ele){
-        return acc+ele
-      });
-  console.log(avg);
+const sum= scores.reduce((sum,{marks})=> sum+marks,0);
+   console.log(sum/scores.length);     
+  console.log((sum/scores.length).toFixed(2));
   
  task-5:
  
